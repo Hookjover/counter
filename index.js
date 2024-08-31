@@ -1,3 +1,6 @@
+window.addEventListener('dblclick', function(event) {
+  event.preventDefault();
+}, true);
 let peopleSum = document.getElementById("peopleSum")
 console.log(peopleSum.innerText);
 let countOne = document.getElementById("countOne")
