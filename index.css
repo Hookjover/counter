@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+.container{
+    width: 25vw;
+    height: 90vh;
+    margin:2% auto;
+    background-color: aqua;
+    border-radius: 1.5em;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr .1fr 2.8fr .1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-gap: .8em;
+    text-align: center;
+    justify-items: center;
+    padding-bottom: 1.5%;
+}
+button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    width:20vw; 
+    height: 7vh;
+    /* line-height: 6vh; */
+    border-radius: 12px;
+    /* font-size: 1rem;     */
+}
+button:hover{
+    cursor: pointer;
+}
+#dataArea{
+    background-color: rgb(8, 236, 236);
+    width: 20vw;
+    border-radius: 12px;
+    resize: none;
+    border: none;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,120px);
+    grid-template-rows: repeat(auto-fill,20px);
+    overflow: auto;
+    justify-items: start;
+}
+#dataArea::-webkit-scrollbar{
+    width: 4px;
+}
+#dataArea::-webkit-scrollbar-track {
+    background-color: rgb(0, 198, 198);
+}
+
+#dataArea::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.countStamp{
+    height: 20px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 20%;
+    padding: 0 4px;
+    font-size: 15px;
+}
+.timeStamp{
+    color:rgb(2, 123, 123);
+    margin-left: 2px;
+    font-size: 16px;
+}
+
+#countOne{
+    font-size: 11rem;
+    /* padding-bottom: .2em; */
+}
+.countTitle{
+    align-content: center;
+}
+.peopleNumEverCount{
+    align-content: start;
+}
+
+.peopleNumSum{
+    align-content: end;
+    margin-top: .5em;
+}
+.peopleSum{
+    font-size: 4rem;
+    align-content: start;
+}
